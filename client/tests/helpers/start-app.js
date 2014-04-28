@@ -1,4 +1,4 @@
-var Router = require('client/router')['default'];
+var Router = require('ot/router')['default'];
 
 function startApp(attrs) {
   var App;
@@ -15,7 +15,7 @@ function startApp(attrs) {
   });
 
   Ember.run(function(){
-    App = require('client/main')['default']('client', attributes);
+    App = require('ot/main')['default']('ot', attributes);
     App.setupForTesting();
     App.injectTestHelpers();
   });

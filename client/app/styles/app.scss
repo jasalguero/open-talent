@@ -1,6 +1,10 @@
-html, body {
-  margin: 20px;
-}
+//      VENDOR
+@import "vendor/bootstrap";
+@import "vendor/font-awesome";
+@import "vendor/sb-admin-v2";
 
-$color: bisque;
-body{background: $color;}
+
+//      PARTIALS
+@import "partials/application";
+@import "partials/components";
+@import "partials/main-menu";

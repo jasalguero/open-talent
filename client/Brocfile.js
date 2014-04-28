@@ -17,7 +17,7 @@ var preprocessJs = p.preprocessJs;
 
 module.exports = function (broccoli) {
 
-  var prefix = 'client';
+  var prefix = 'ot';
   var rootURL = '/';
 
   // index.html

@@ -3,7 +3,7 @@ import Resolver from 'ember/resolver';
 var resolver = Resolver.create();
 
 resolver.namespace = {
-  modulePrefix: 'client'
+  modulePrefix: 'ot'
 };
 
 export default resolver;
