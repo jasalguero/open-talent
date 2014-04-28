@@ -1,10 +1,21 @@
+//       GLOBALS
+@import "partials/fonts";
+@import "partials/variables";
+
+
+
 //      VENDOR
 @import "vendor/bootstrap";
 @import "vendor/font-awesome";
+
 //@import "vendor/sb-admin-v2";
 
 
 //      PARTIALS
+@import "partials/mixins";
+@import "partials/typography";
 @import "partials/application";
 @import "partials/components";
 @import "partials/main-menu";
+@import "partials/panels";
+@import "partials/buttons";

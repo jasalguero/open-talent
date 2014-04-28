@@ -1,9 +1,11 @@
-<nav class="navbar navbar-static-top" role="navigation">
-  <div class="container-fluid">
-    {{#link-to 'main'}}
-    	<img id="logo" src="/assets/imgs/openTalentLogo.png">
-   	{{/link-to}}
-  </div>
-</nav>
+<div id="outer-wrapper">
+  <nav class="navbar navbar-static-top" role="navigation">
+    <div class="container-fluid">
+      {{#link-to 'main'}}
+      <img id="logo" src="/assets/imgs/openTalentLogo.png">
+      {{/link-to}}
+    </div>
+  </nav>
 
-{{outlet}}
+  {{outlet}}
+</div>

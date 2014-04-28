@@ -17,7 +17,7 @@ Controller = Em.Controller.extend(
   # ACTIONS
   actions:
     login: ->
-      this.transitionToRoute('app');
+      this.transitionToRoute('main');
 
 );
 
