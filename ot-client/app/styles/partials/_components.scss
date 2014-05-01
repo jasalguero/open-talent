@@ -1,7 +1,7 @@
 .box {
   padding: 10px;
 
-  .icon{    
+  .icon{
     padding: 10px 20px;
     border-radius: 5px;
   }
@@ -22,9 +22,10 @@
   font-size: 22px;
   color: white;
   text-align: center;
-  background: #62b1d0;
-  border: 0;
+  // background: #62b1d0;
+  // border: 0;
   cursor: pointer;
+  @extend .box-shadow;
 
   .text{
     height: 0;
@@ -32,7 +33,7 @@
   }
 
   &:hover {
-    background: transparent;
+    // background: transparent;
     .text {
       color: inherit;
     }

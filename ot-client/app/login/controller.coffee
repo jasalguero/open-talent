@@ -1,10 +1,10 @@
 Controller = Em.Controller.extend(
-  # PROPERTIES
 
+  # PROPERTIES #
   email: null,
   password: null,
 
-  # PRIVATE METHODS
+  # PRIVATE METHODS #
   init: ->
     this._super();
     this.reset();
@@ -13,8 +13,7 @@ Controller = Em.Controller.extend(
     this.set 'email', '';
     this.set 'password', '';
 
-
-  # ACTIONS
+  # ACTIONS #
   actions:
     login: ->
       this.transitionToRoute('main');

@@ -9,5 +9,8 @@ Router.map ->
   @resource 'main', path: '/', ->
     @route 'logout'
 
+    @resource 'members', ->
+      @route 'search'
+
 
 `export default Router`
