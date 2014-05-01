@@ -1,0 +1,42 @@
+<div class="member-search">
+  <div class="row">
+    <div class="col-md-7 col-md-offset-1">
+      <h1>Members Index</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-7 col-md-offset-1">
+      {{input placeholder='Search' value=allFilter class="form-control input-lg"}}
+      <span class="help-block">Search for any of the attributes displayed below</span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-7 col-md-offset-1">
+      <table class="table table-stripped table-hover">
+        <thead>
+          <tr>
+            <th>
+              Id
+            </th>
+            <th>
+              Name
+            </th>
+            <th>
+              Nationality
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {{#each}}
+          <tr>
+            <td>{{id}}</td>
+            <td>{{firstName}} {{lastName}}</td>
+            <td>{{nationality}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
