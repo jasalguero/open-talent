@@ -1,5 +1,5 @@
 /* global require, module */
-
+var pickFiles = require('broccoli-static-compiler');
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var app = new EmberApp({
@@ -35,4 +35,12 @@ var app = new EmberApp({
   getEnvJSON: require('./config/environment')
 });
 
-module.exports = app.toTree();
+//module.exports = app.toTree();
+
+var appTree = app.toTree();
+
+module.exports =  pickFiles(appTree, {
+  srcDir: '../../dist',
+  // files: ['**/*'],
+  destDir: '../../../public'
+});
