@@ -1,4 +1,4 @@
-open-talent
+Open Talent
 ===========
 
 In progress

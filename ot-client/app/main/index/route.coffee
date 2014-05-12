@@ -3,7 +3,7 @@ Route = Em.Route.extend(
     new Ember.RSVP.Promise (resolve) ->
       setTimeout ->
         resolve(true)
-      , 5000
+      , 500
 );
 
 `export default Route`
