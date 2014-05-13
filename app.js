@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api', enrouten({
-    directory: 'routes'
+    directory: 'app/routes'
 }));
 
 // /// catch 404 and forwarding to error handler
