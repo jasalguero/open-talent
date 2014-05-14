@@ -1,6 +1,6 @@
 {
     "db": "mongodb://localhost/open-talent",
     "app": {
-        "name": "Open Talent"
+        "name": "Open Talent - DEV"
     }
 }
