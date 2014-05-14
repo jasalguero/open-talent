@@ -1,0 +1,6 @@
+{
+    "db": process.env.DB_URL,
+    "app": {
+        "name": "Open Talent"
+    }
+}

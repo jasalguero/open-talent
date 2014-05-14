@@ -1,25 +1,33 @@
+// MODULES =================================================
+
 var express = require('express');
 var path = require('path');
 var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser'),
-    enrouten = require('express-enrouten');
+    enrouten = require('express-enrouten'),
+    config = require('./config/config'),
+    app = express(),
+    mongoose = require('mongoose');
 
-var app = express();
 
-// add when favicon is defined
-// app.use(favicon());
-// app.use(logger('dev'));
+// CONFIGURATION =================================================
+
+// app.use(favicon()); add when favicon is defined
+app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
-// app.use(cookieParser());
-
+// app.use(cookieParser()); add if needed
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+//Bootstrap db connection
+var db = mongoose.connect(config.db);
+
+
 app.use('/api', enrouten({
-    directory: 'app/routes'
+  directory: 'app/routes'
 }));
 
 // /// catch 404 and forwarding to error handler
